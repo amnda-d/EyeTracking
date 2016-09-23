@@ -361,17 +361,17 @@ if __name__ == '__main__':
 
 	print("Default region files are .cnt and .reg. The default order of fields in these files is as follows:")
 	print("")
-	print(".cnt: Item = 0, Condition = 1, Number of Regions = 2, Region Boundaries")
-	print(".reg: Condition = 0, Item = 1, Number of Regions = 2, Region Boundaries")
+	print(".reg: Item = 0, Condition = 1, Number of Regions = 2, Region Boundaries")
+	print(".cnt: Condition = 0, Item = 1, Number of Regions = 2, Region Boundaries")
 	print("")
 	print("If you are using one of these file types, enter it here. If not, press enter.")
 	fileType = input("File type: ")
-	if fileType.lower() == ".cnt" or fileType.lower() == "cnt":
+	if fileType.lower() == ".reg" or fileType.lower() == "reg":
 		condition = 1
 		item =0
 		count =2
 		y = False
-	elif fileType.lower() == ".reg" or fileType.lower() == "reg":
+	elif fileType.lower() == ".cnt" or fileType.lower() == "cnt":
 		condition =0
 		item =1
 		count =2
